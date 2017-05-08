@@ -1,0 +1,8 @@
+<h2>Marketplace</h2>
+
+<div *ngFor="let product of products" (click)="goToDetailPage(product)" class="panel panel-default">
+  <div class="panel-body">
+    <h3>{{product.title}} by {{product.brand}}</h3>
+    <h4>$ {{product.price}}</h4>
+  </div>
+</div>
